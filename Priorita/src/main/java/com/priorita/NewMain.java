@@ -11,6 +11,8 @@ public class NewMain {
      * @throws java.lang.InterruptedException
      */
     public static void main(String[] args) throws InterruptedException {
+        public static boolean run = true;
+        
         Contatori c1 = new Contatori(1);
         Contatori c2 = new Contatori(2);
         Contatori c3 = new Contatori(3);
