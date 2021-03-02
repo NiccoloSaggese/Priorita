@@ -8,7 +8,6 @@ public class Contatori implements Runnable {
 
     private final int id;
     private int contatore = 0;
-    private boolean run = true;
 
     public boolean isRun() {
         return run;
@@ -24,7 +23,7 @@ public class Contatori implements Runnable {
 
     @Override
     public void run() {
-        while (run == true) {
+        while (Main.run) {
             contatore++;
             System.out.println("Thread" + id + " " + contatore);
         }
